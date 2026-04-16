@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【初心者向け】SBI証券でNISAをはじめよう｜カンタン3ステップ</title>
+    <meta name="description" content="投資がはじめての方でも安心。SBI証券のNISA口座開設は最短5分。3つのメリットと簡単3ステップをわかりやすく解説します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50:  '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0',
+                            300: '#86efac', 400: '#4ade80', 500: '#22c55e',
+                            600: '#16a34a', 700: '#15803d', 800: '#166534',
+                            900: '#14532d',
+                        },
+                        accent: {
+                            50:  '#fffbeb', 100: '#fef3c7', 200: '#fde68a',
+                            300: '#fcd34d', 400: '#fbbf24', 500: '#f59e0b',
+                        }
+                    },
+                    fontFamily: { sans: ['"Noto Sans JP"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { font-family: 'Noto Sans JP', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 30%, #ffffff 70%, #f0fdf4 100%); }
+        .float-animation { animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .pulse-btn { animation: pulse-green 2s infinite; }
+        @keyframes pulse-green { 0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.4); } 50% { box-shadow: 0 0 0 15px rgba(34,197,94,0); } }
+        .step-line::before { content: ''; position: absolute; left: 28px; top: 60px; bottom: -20px; width: 3px; background: linear-gradient(to bottom, #22c55e, #dcfce7); }
+        .step-card:last-child .step-line::before { display: none; }
+        .check-icon::before { content: '✓'; display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: #22c55e; color: white; border-radius: 50%; font-size: 14px; font-weight: bold; margin-right: 8px; flex-shrink: 0; }
+        .benefit-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .benefit-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .cta-gradient { background: linear-gradient(135deg, #15803d 0%, #22c55e 50%, #16a34a 100%); }
+    </style>
+</head>
+<body class="bg-white text-gray-800 overflow-x-hidden">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero-gradient relative min-h-screen flex items-center justify-center px-4 py-16">
+        <div class="absolute top-10 right-10 w-64 h-64 bg-primary-200 rounded-full opacity-20 blur-3xl"></div>
+        <div class="absolute bottom-20 left-10 w-48 h-48 bg-primary-300 rounded-full opacity-15 blur-2xl"></div>
+        <div class="max-w-2xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-primary-200 rounded-full px-4 py-2 mb-6 shadow-sm">
+                <span class="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></span>
+                <span class="text-sm font-medium text-primary-700">投資がはじめての方へ</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
+                <span class="text-gray-900">お金の不安、</span><br>
+                <span class="text-primary-600">NISAで解消</span>
+                <span class="text-gray-900">しませんか？</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-4 leading-relaxed">
+                「投資って難しそう…」「お金が増やせるか不安…」そんなあなたも大丈夫。<br>SBI証券なら<span class='font-semibold text-primary-700'>スマホで最短5分</span>で口座開設でき、<span class='font-semibold text-primary-700'>100円から</span>投資を始められます。<br>毎月の貯金を少しずつ増やす感覚で、あなたのペースで始めましょう。
+            </p>
+            <p class="text-sm text-gray-400 mb-8">※ NISA口座の開設は無料です</p>
+            <a href="https://example.com/affiliate/sbi" id="hero-cta"
+               class="pulse-btn inline-flex items-center gap-3 cta-gradient text-white font-bold text-lg px-10 py-5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <span>無料で口座開設する</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </a>
+            <div class="mt-6 flex items-center justify-center gap-6 text-sm text-gray-500">
+                <span class="flex items-center gap-1">🔒 安心のセキュリティ</span>
+                <span class="flex items-center gap-1">📱 スマホで完結</span>
+                <span class="flex items-center gap-1">¥0 口座開設無料</span>
+            </div>
+            <div class="mt-10 float-animation">
+                <div class="inline-flex items-center gap-3 bg-white rounded-xl px-6 py-3 shadow-md border border-gray-100">
+                    <div class='text-left'><p class='text-xs text-gray-400'>口座数</p><p class='text-xl font-extrabold text-primary-700'>900万以上</p></div><div class='w-px h-10 bg-gray-200'></div><div class='text-left'><p class='text-xs text-gray-400'>取扱商品数</p><p class='text-xl font-extrabold text-primary-700'>2,700以上</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== メリット3選 ===== -->
+    <section class="py-20 px-4 bg-white" id="benefits">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-14 fade-in">
+                <span class="inline-block bg-primary-100 text-primary-700 font-semibold text-sm px-4 py-1.5 rounded-full mb-4">MERIT</span>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 mb-4">
+                    証券口座を開設する<br class="md:hidden"><span class="text-primary-600">メリット3選</span>
+                </h2>
+                <p class="text-gray-500 text-base md:text-lg">「貯金だけ」を卒業するための第一歩</p>
+            </div>
+            <div class="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-6">
+                
+                <div class="benefit-card bg-white rounded-2xl p-8 border border-gray-100 shadow-sm fade-in">
+                    <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center text-3xl mb-5">💰</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">少額から始められる</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed"><span class='font-semibold text-primary-700'>100円単位で投資可能</span>。毎月のお小遣いや余ったお金で無理なく始められます。SBI証券なら、貯金感覚で資産づくりができるので、投資初心者にぴったりです。</p>
+                </div>
+
+                <div class="benefit-card bg-white rounded-2xl p-8 border border-gray-100 shadow-sm fade-in" style="transition-delay: 0.1s">
+                    <div class="w-14 h-14 bg-accent-100 rounded-2xl flex items-center justify-center text-3xl mb-5">📱</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">スマホで簡単に管理</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">SBI証券のアプリなら、いつでもどこでも投資状況を確認できます。毎日チェックする必要はなく、<span class='font-semibold text-primary-700'>月に1～2回見るくらい</span>でOK。仕事や家事の合間にサッと確認できます。</p>
+                </div>
+
+                <div class="benefit-card bg-white rounded-2xl p-8 border border-gray-100 shadow-sm fade-in" style="transition-delay: 0.2s">
+                    <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center text-3xl mb-5">🎓</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">初心者向けの学習サポート</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">SBI証券には、投資の基礎から学べるコンテンツが充実しています。<span class='font-semibold text-primary-700'>動画や記事は無料</span>で閲覧でき、わからないことがあっても安心して学び続けられます。</p>
+                </div>
+
+                <div class="benefit-card bg-white rounded-2xl p-8 border border-gray-100 shadow-sm fade-in" style="transition-delay: 0.30000000000000004s">
+                    <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center text-3xl mb-5">💳</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">クレカで自動積立ができる</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">クレジットカードを設定すれば、<span class='font-semibold text-primary-700'>毎月自動で投資</span>できます。SBI証券を使えば、貯金と同じ感覚で資産を増やせるので、続けやすさが全く違います。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 開設ステップ ===== -->
+    <section class="py-20 px-4 bg-gradient-to-b from-primary-50 to-white" id="steps">
+        <div class="max-w-2xl mx-auto">
+            <div class="text-center mb-14 fade-in">
+                <span class="inline-block bg-primary-100 text-primary-700 font-semibold text-sm px-4 py-1.5 rounded-full mb-4">HOW TO</span>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 mb-4">
+                    最短<span class="text-primary-600">5分</span>で終わる<br class="md:hidden"><span class="text-primary-600">3ステップ</span>
+                </h2>
+                <p class="text-gray-500 text-base md:text-lg">スマホひとつで、すべて完結します</p>
+            </div>
+            <div class="space-y-8">
+                
+                <div class="step-card relative fade-in">
+                    <div class="step-line relative flex gap-5">
+                        <div class="flex-shrink-0 w-14 h-14 cta-gradient rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow-md">1</div>
+                        <div class="bg-white rounded-2xl p-6 flex-1 border border-gray-100 shadow-sm">
+                            <h3 class="font-bold text-lg text-gray-900 mb-2">📋 必要な情報を入力</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">スマホで氏名・生年月日・住所などを入力するだけ。マイナンバーも用意しておくとスムーズです。難しい質問はないので、誰でもできます。</p>
+                            <div class="mt-3 text-xs text-primary-600 font-medium">⏱ 約3分</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card relative fade-in" style="transition-delay: 0.15s">
+                    <div class="step-line relative flex gap-5">
+                        <div class="flex-shrink-0 w-14 h-14 cta-gradient rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow-md">2</div>
+                        <div class="bg-white rounded-2xl p-6 flex-1 border border-gray-100 shadow-sm">
+                            <h3 class="font-bold text-lg text-gray-900 mb-2">✅ 本人確認を完了</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">スマホのカメラで自分の顔と身分証を撮影するだけ。AIが瞬時に確認してくれるので、即座に次へ進めます。郵送よりずっと早いです。</p>
+                            <div class="mt-3 text-xs text-primary-600 font-medium">⏱ 約1分</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card relative fade-in" style="transition-delay: 0.3s">
+                    <div class="step-line relative flex gap-5">
+                        <div class="flex-shrink-0 w-14 h-14 cta-gradient rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow-md">3</div>
+                        <div class="bg-white rounded-2xl p-6 flex-1 border border-gray-100 shadow-sm">
+                            <h3 class="font-bold text-lg text-gray-900 mb-2">🎉 口座開設完了</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">完了メールが届いたら、すぐに投資を始められます。銀行口座から入金して、あなたの好きなタイミングで投資スタート。焦る必要はありません。</p>
+                            <div class="mt-3 text-xs text-primary-600 font-medium">⏱ 約1分</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 安心ポイント ===== -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-2xl mx-auto fade-in">
+            <div class="bg-primary-50 rounded-3xl p-8 md:p-10 border border-primary-100">
+                <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">🔐 はじめてでも安心な理由</h3>
+                <div class="space-y-4">
+                    
+                    <div class="flex items-start gap-3">
+                        <span class="check-icon flex-shrink-0 mt-0.5"></span>
+                        <p class="text-gray-700 text-sm leading-relaxed"><span class="font-semibold">金融庁に登録済みの安心</span> — SBI証券は国が認可した証券会社。きちんと監督されているので安全です。</p>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <span class="check-icon flex-shrink-0 mt-0.5"></span>
+                        <p class="text-gray-700 text-sm leading-relaxed"><span class="font-semibold">資産は厳重に保管</span> — あなたのお金は、SBI証券の資産とは分けて保管。つぶれても戻ってきます。</p>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <span class="check-icon flex-shrink-0 mt-0.5"></span>
+                        <p class="text-gray-700 text-sm leading-relaxed"><span class="font-semibold">口座開設は完全無料</span> — 開設費や月額費用は一切かかりません。損のない選択肢です。</p>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <span class="check-icon flex-shrink-0 mt-0.5"></span>
+                        <p class="text-gray-700 text-sm leading-relaxed"><span class="font-semibold">何もしなければリスクゼロ</span> — 入金しないなら、何も起こりません。気軽に始められます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 最終CTA ===== -->
+    <section class="py-20 px-4 bg-gradient-to-b from-white to-primary-50" id="cta">
+        <div class="max-w-2xl mx-auto text-center fade-in">
+            <div class="text-5xl mb-6">🌱</div>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
+                未来の自分に、<br><span class="text-primary-600">いちばん小さな一歩</span>を。
+            </h2>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+                投資は「今でしょ」という気持ちで十分です。<br>SBI証券なら、口座開設は完全無料で、やめたくなったらいつでも辞められます。<br><span class='font-semibold text-primary-700'>1年後、5年後に「あのとき始めておけば」と後悔する前に、今日から一歩踏み出しましょう。</span>
+            </p>
+            <a href="https://example.com/affiliate/sbi" id="final-cta"
+               class="pulse-btn inline-flex items-center gap-3 cta-gradient text-white font-bold text-lg px-12 py-5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 mb-4">
+                <span>SBI証券で無料口座開設</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </a>
+            <p class="text-xs text-gray-400 mt-4">
+                ※ 本ページはアフィリエイト広告を含みます。口座開設は各証券会社の公式サイトで行われます。<br>
+                ※ 投資にはリスクがあります。余裕資金で始めることをおすすめします。
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== フッター ===== -->
+    <footer class="bg-gray-900 text-gray-400 py-10 px-4">
+        <div class="max-w-4xl mx-auto text-center text-xs space-y-3">
+            <p>当サイトは投資の勧誘を目的としたものではありません。投資判断はご自身の責任で行ってください。</p>
+            <p>金融商品取引法に基づく表示：リスクについては各証券会社の重要事項説明書をご確認ください。</p>
+            <div class="pt-4 border-t border-gray-800">
+                <p>&copy; 2026 マネーのはじめかた All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
