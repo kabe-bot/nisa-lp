@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新NISAは"これ"が正解｜三井住友カード×SBI証券でVポイントをザクザク貯める</title>
+  <meta name="description" content="三井住友カード（NL）×SBI証券のクレカ積立で最大5.0%のVポイント還元。新NISA初心者でも最短5分で始められる2ステップを解説。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            smbc: { green: '#00A43C', dark: '#007A2E', light: '#E6F7EC' },
+            vpoint: { yellow: '#FFD700', amber: '#FFAA00', light: '#FFF8E1' },
+            navy: '#1A2744',
+          },
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    * { font-family: 'Noto Sans JP', sans-serif; }
+    .hero-gradient { background: linear-gradient(135deg, #E6F7EC 0%, #FFF8E1 50%, #FFFFFF 100%); }
+    .vpoint-shine {
+      background: linear-gradient(135deg, #FFD700 0%, #FFAA00 50%, #FFD700 100%);
+      background-size: 200% 200%;
+      animation: shine 3s ease-in-out infinite;
+    }
+    @keyframes shine { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+    .cta-pulse { animation: pulse-glow 2s ease-in-out infinite; }
+    @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(0,164,60,0.4); } 50% { box-shadow: 0 0 20px 8px rgba(0,164,60,0.15); } }
+    .cta-pulse-yellow { animation: pulse-yellow 2s ease-in-out infinite; }
+    @keyframes pulse-yellow { 0%, 100% { box-shadow: 0 0 0 0 rgba(255,215,0,0.4); } 50% { box-shadow: 0 0 20px 8px rgba(255,215,0,0.15); } }
+    .fade-up { opacity: 0; transform: translateY(30px); transition: all 0.7s cubic-bezier(0.4,0,0.2,1); }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+    .point-number { background: linear-gradient(135deg, #FFD700, #FFAA00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .step-line { background: linear-gradient(to bottom, #00A43C, #FFD700); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; }
+    .faq-answer.open { max-height: 300px; padding-top: 12px; padding-bottom: 4px; }
+    .badge-glow { animation: badge-pulse 2.5s ease-in-out infinite; }
+    @keyframes badge-pulse { 0%, 100% { box-shadow: 0 0 8px rgba(255,215,0,0.3); } 50% { box-shadow: 0 0 20px rgba(255,215,0,0.6); } }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- ヒーロー -->
+  <section class="hero-gradient min-h-screen flex flex-col items-center justify-center px-4 py-16 text-center relative overflow-hidden">
+    <div class="absolute top-10 left-10 w-20 h-20 bg-smbc-green/10 rounded-full blur-2xl"></div>
+    <div class="absolute bottom-20 right-10 w-32 h-32 bg-vpoint-yellow/15 rounded-full blur-3xl"></div>
+    <div class="fade-up inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-smbc-green/20 rounded-full px-5 py-2 mb-6 shadow-sm">
+      <span class="w-2 h-2 bg-vpoint-yellow rounded-full animate-pulse"></span>
+      <span class="text-sm font-medium text-smbc-dark">2026年 最新版</span>
+    </div>
+    <h1 class="fade-up text-3xl md:text-5xl font-black leading-tight mb-6 max-w-3xl">毎月の積立で
+ポイントが貯まる。
+投資も、お得も、
+一度に手に入れる。</h1>
+    <p class="fade-up text-gray-600 text-base md:text-lg mb-4 max-w-xl leading-relaxed">三井住友カード（NL）でSBI証券の投資信託を買うと、積立額の最大1%がVポイントで還元。年会費無料だから、コストゼロで資産形成がはじまります。</p>
+    <p class="fade-up text-xs text-gray-400 mb-8">※ ポイント還元率はカードの種類により異なります</p>
+    <div class="fade-up vpoint-shine badge-glow text-navy font-black text-xl md:text-2xl rounded-2xl px-8 py-4 mb-8 shadow-lg">
+      🏆 クレカ積立で最大 <span class="text-3xl md:text-4xl">5.0</span><span class="text-xl">%</span> ポイント還元！
+    </div>
+    <div class="fade-up flex flex-wrap justify-center gap-4 text-sm text-gray-500 mb-10">
+      <span>🔒 年会費永年無料</span><span>📱 最短5分で申込</span><span>🏦 ネット証券No.1</span>
+    </div>
+    <div class="fade-up flex flex-col sm:flex-row gap-4 w-full max-w-lg">
+      <a href="https://example.com/card-affiliate" class="cta-pulse flex-1 bg-smbc-green hover:bg-smbc-dark text-white text-center font-bold text-lg rounded-2xl py-5 px-6 transition-all shadow-lg hover:shadow-xl">まずはカードを発行 →</a>
+      <a href="https://example.com/sbi-affiliate" class="flex-1 bg-navy hover:bg-gray-800 text-white text-center font-bold text-lg rounded-2xl py-5 px-6 transition-all shadow-lg hover:shadow-xl">証券口座を開設 →</a>
+    </div>
+  </section>
+
+  <!-- ポイント還元の仕組み -->
+  <section class="bg-white py-20 px-4">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-14 fade-up">
+        <span class="inline-block bg-vpoint-light text-vpoint-amber font-bold text-sm rounded-full px-4 py-1.5 mb-4">POINT</span>
+        <h2 class="text-2xl md:text-4xl font-black">クレカ積立で<span class="point-number">Vポイント</span>が<br>貯まる仕組み</h2>
+        <p class="text-gray-500 mt-3">クレカで積立→投信購入→ポイント自動還元の三角形で、知らずに資産が増える仕組み</p>
+      </div>
+      <div class="fade-up bg-gradient-to-br from-smbc-light to-vpoint-light rounded-3xl p-6 md:p-10 mb-10 shadow-sm">
+        <div class="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-center">
+          <div class="bg-white rounded-2xl p-5 shadow-sm flex-1 w-full">
+            <div class="text-3xl mb-2">💳</div><p class="font-bold text-smbc-dark text-sm">三井住友カード(NL)で</p><p class="font-bold text-lg">毎月積立</p><p class="text-xs text-gray-400 mt-1">月100円〜10万円</p>
+          </div>
+          <div class="text-2xl text-smbc-green font-bold rotate-90 md:rotate-0">→</div>
+          <div class="bg-white rounded-2xl p-5 shadow-sm flex-1 w-full">
+            <div class="text-3xl mb-2">📈</div><p class="font-bold text-smbc-dark text-sm">SBI証券で</p><p class="font-bold text-lg">投資信託を購入</p><p class="text-xs text-gray-400 mt-1">NISAつみたて投資枠</p>
+          </div>
+          <div class="text-2xl text-vpoint-amber font-bold rotate-90 md:rotate-0">→</div>
+          <div class="bg-white rounded-2xl p-5 shadow-sm flex-1 w-full border-2 border-vpoint-yellow">
+            <div class="text-3xl mb-2">✨</div><p class="font-bold text-vpoint-amber text-sm">自動的に</p><p class="font-bold text-lg point-number">Vポイント獲得！</p><p class="text-xs text-gray-400 mt-1">ポイントで再投資も可能</p>
+          </div>
+        </div>
+      </div>
+      <!-- 還元率テーブル -->
+      <div class="fade-up bg-white rounded-3xl border border-gray-100 shadow-md overflow-hidden mb-10">
+        <div class="bg-navy text-white text-center py-4 px-4"><h3 class="font-bold text-lg">💰 カード別ポイント還元率</h3></div>
+        <div class="divide-y divide-gray-100">
+          <div class="flex items-center justify-between p-5 hover:bg-gray-50 transition"><div><p class="font-bold">三井住友カード（NL）</p><p class="text-xs text-gray-400">年会費永年無料</p></div><div class="text-right"><span class="text-2xl font-black text-smbc-green">0.5%</span><p class="text-xs text-gray-400">月5万円で年3,000pt</p></div></div>
+          <div class="flex items-center justify-between p-5 hover:bg-gray-50 transition"><div><p class="font-bold">三井住友カード ゴールド（NL）</p><p class="text-xs text-gray-400">年100万円利用で翌年以降永年無料</p></div><div class="text-right"><span class="text-2xl font-black text-smbc-green">1.0%</span><p class="text-xs text-gray-400">月5万円で年6,000pt</p></div></div>
+          <div class="flex items-center justify-between p-5 bg-vpoint-light hover:bg-yellow-50 transition"><div><p class="font-bold text-vpoint-amber">三井住友カード プラチナプリファード</p><p class="text-xs text-gray-400">年会費33,000円（税込）</p></div><div class="text-right"><span class="text-3xl font-black point-number">5.0%</span><p class="text-xs text-vpoint-amber font-bold">月5万円で年30,000pt 🎉</p></div></div>
+        </div>
+      </div>
+      <!-- メリット -->
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="fade-up card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm"><div class="w-12 h-12 bg-smbc-light rounded-xl flex items-center justify-center text-2xl mb-4">💳</div><h3 class="font-bold text-lg mb-2">年会費永年無料だから、始めやすい</h3><p class="text-sm text-gray-600 leading-relaxed">三井住友カード（NL）は年会費がずっと無料。余計なコストが一切かからないので、気軽に投資をスタートできます。クレジットカードを持つだけで、損することはありません。</p></div>
+        <div class="fade-up card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm" style="transition-delay:0.1s"><div class="w-12 h-12 bg-vpoint-light rounded-xl flex items-center justify-center text-2xl mb-4">🔄</div><h3 class="font-bold text-lg mb-2">貯めたポイントで、さらに投資できる</h3><p class="text-sm text-gray-600 leading-relaxed">毎月の積立で貯まるVポイントは、SBI証券でそのまま投信購入に使用可能。ポイントも資産も同時に増える、投資初心者にぴったりの好循環が生まれます。</p></div>
+        <div class="fade-up card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm" style="transition-delay:0.2s"><div class="w-12 h-12 bg-smbc-light rounded-xl flex items-center justify-center text-2xl mb-4">🏦</div><h3 class="font-bold text-lg mb-2">SBI証券なら、投資初心者も安心</h3><p class="text-sm text-gray-600 leading-relaxed">SBI証券は口座数600万超の国内最大級のネット証券。初心者向けの投資講座も充実しており、わからないことがあっても安心です。大手だからサポートも手厚い。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2ステップ手順 -->
+  <section class="bg-gradient-to-b from-gray-50 to-white py-20 px-4">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-14 fade-up">
+        <span class="inline-block bg-smbc-light text-smbc-green font-bold text-sm rounded-full px-4 py-1.5 mb-4">HOW TO</span>
+        <h2 class="text-2xl md:text-4xl font-black">たった<span class="text-smbc-green">2ステップ</span>で完了</h2>
+        <p class="text-gray-500 mt-3">カードと証券口座、この順番がベストです</p>
+      </div>
+      <!-- Step 1 -->
+      <div class="fade-up relative mb-8">
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center"><div class="w-14 h-14 bg-smbc-green text-white rounded-2xl flex items-center justify-center text-2xl font-black shadow-lg">1</div><div class="step-line w-1 flex-1 mt-2 rounded-full"></div></div>
+          <div class="flex-1 pb-8">
+            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-md">
+              <div class="flex items-center gap-2 mb-1"><span class="text-lg">💳</span><h3 class="font-bold text-xl">ステップ1：三井住友カード（NL）に申し込む</h3></div>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">公式サイトから最短5分で申し込み完了。翌営業日のカード発行で、すぐに使い始められます。スマホだけで完結する手軽さが魅力です。</p>
+              <div class="bg-smbc-light rounded-xl p-3 mb-4"><p class="text-xs text-smbc-dark">✅ 最短5分で申し込み完了
+✅ 翌営業日に発行可能
+✅ スマホだけで手続き完結</p></div>
+              <div class="flex items-center gap-2 text-xs text-gray-400 mb-4"><span>⏱</span><span>約5分で完了</span></div>
+              <a href="https://example.com/card-affiliate" class="cta-pulse block bg-smbc-green hover:bg-smbc-dark text-white text-center font-bold text-lg rounded-2xl py-4 transition-all shadow-lg hover:shadow-xl">まずはカードを発行する →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div class="fade-up relative">
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center"><div class="w-14 h-14 vpoint-shine text-navy rounded-2xl flex items-center justify-center text-2xl font-black shadow-lg">2</div></div>
+          <div class="flex-1">
+            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-md">
+              <div class="flex items-center gap-2 mb-1"><span class="text-lg">🏦</span><h3 class="font-bold text-xl">ステップ2：SBI証券の口座を開設する</h3></div>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">SBI証券の公式サイトで口座開設。こちらも最短翌営業日で完了します。カードとセットで登録すれば、クレカ積立の設定ですぐに投資がはじまります。</p>
+              <div class="bg-vpoint-light rounded-xl p-3 mb-4"><p class="text-xs text-vpoint-amber font-medium">✅ 最短翌営業日で口座開設
+✅ クレカと紐付け簡単
+✅ 初心者向けセミナーも無料視聴可</p></div>
+              <div class="flex items-center gap-2 text-xs text-gray-400 mb-4"><span>⏱</span><span>約5分で完了（＋審査1〜3営業日）</span></div>
+              <a href="https://example.com/sbi-affiliate" class="cta-pulse-yellow block bg-navy hover:bg-gray-800 text-white text-center font-bold text-lg rounded-2xl py-4 transition-all shadow-lg hover:shadow-xl">次に証券口座を開設する →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up mt-8 bg-gradient-to-r from-smbc-light to-vpoint-light rounded-2xl p-5 text-sm text-gray-600 text-center">
+        💡 <span class="font-bold">ポイント</span>：カードを先に作っておくと、口座開設後すぐにクレカ積立を設定できてスムーズです！
+      </div>
+    </div>
+  </section>
+
+  <!-- Q&A -->
+  <section class="bg-white py-20 px-4">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-14 fade-up">
+        <span class="inline-block bg-gray-100 text-gray-600 font-bold text-sm rounded-full px-4 py-1.5 mb-4">Q&A</span>
+        <h2 class="text-2xl md:text-4xl font-black">よくある質問</h2>
+        <p class="text-gray-500 mt-3">初心者の方からの疑問にお答えします</p>
+      </div>
+      <div class="space-y-4">
+        <div class="fade-up bg-gray-50 rounded-2xl overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition"><span class="font-bold text-base flex items-center gap-2"><span class="text-smbc-green font-black">Q.</span>カードと証券、どちらを先に申し込むべき？</span><span class="text-gray-400 text-xl transition-transform duration-300">＋</span></button>
+          <div class="faq-answer px-5"><p class="text-sm text-gray-600 leading-relaxed pb-4"><span class="font-bold text-smbc-green">A.</span> カード→証券の順がおすすめです。カードの審査・発行が先に完了することで、すぐにクレカ積立の設定ができ、翌月から投資がスタートします。両方同時申し込みもできますが、この順序がスムーズです。</p></div>
+        </div>
+        <div class="fade-up bg-gray-50 rounded-2xl overflow-hidden" style="transition-delay:0.1s">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition"><span class="font-bold text-base flex items-center gap-2"><span class="text-smbc-green font-black">Q.</span>本当に年会費はずっと無料？維持費はかかりませんか？</span><span class="text-gray-400 text-xl transition-transform duration-300">＋</span></button>
+          <div class="faq-answer px-5"><p class="text-sm text-gray-600 leading-relaxed pb-4"><span class="font-bold text-smbc-green">A.</span> はい、三井住friendカード（NL）は年会費永年無料です。口座維持費や手数料も一切かかりません。クレカを持っているだけでコストは発生しないので、安心して持ち続けられます。</p></div>
+        </div>
+        <div class="fade-up bg-gray-50 rounded-2xl overflow-hidden" style="transition-delay:0.2s">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition"><span class="font-bold text-base flex items-center gap-2"><span class="text-smbc-green font-black">Q.</span>貯まったVポイントは、どうやって使うの？</span><span class="text-gray-400 text-xl transition-transform duration-300">＋</span></button>
+          <div class="faq-answer px-5"><p class="text-sm text-gray-600 leading-relaxed pb-4"><span class="font-bold text-smbc-green">A.</span> SBI証券ではVポイントをそのまま投信購入に充当できます。さらに三井住友グループの加盟店やコンビニでの買い物でも使用可能。ポイントの使い道が豊富だから、無駄なく活用できます。</p></div>
+        </div>
+        <div class="fade-up bg-gray-50 rounded-2xl overflow-hidden" style="transition-delay:0.3s">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition"><span class="font-bold text-base flex items-center gap-2"><span class="text-smbc-green font-black">Q.</span>投資初心者ですが、本当に大丈夫でしょうか？</span><span class="text-gray-400 text-xl transition-transform duration-300">＋</span></button>
+          <div class="faq-answer px-5"><p class="text-sm text-gray-600 leading-relaxed pb-4"><span class="font-bold text-smbc-green">A.</span> むしろ初心者こそおすすめです。クレカ積立なら毎月自動で投資信託が購入され、難しい判断が不要。SBI証券のセミナーや投資講座も充実しており、学びながら実践できます。少額からコツコツ始められます。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最終CTA -->
+  <section class="bg-gradient-to-b from-white via-smbc-light to-vpoint-light py-20 px-4">
+    <div class="max-w-2xl mx-auto text-center fade-up">
+      <div class="text-5xl mb-6">🌱</div>
+      <h2 class="text-2xl md:text-3xl font-black leading-tight mb-4">投資は、
+お得に、
+気軽に、
+はじめる時代。</h2>
+      <p class="text-gray-600 mb-8">三井住友カード（NL）とSBI証券のセットなら、年会費ゼロでポイントも資産も増える。迷っているなら、今月から始めましょう。あなたの未来は、小さな一歩から変わります。</p>
+      <div class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto mb-6">
+        <a href="https://example.com/card-affiliate" class="cta-pulse flex-1 bg-smbc-green hover:bg-smbc-dark text-white text-center font-bold text-lg rounded-2xl py-5 px-6 transition-all shadow-lg hover:shadow-xl">①カードを発行する →</a>
+        <a href="https://example.com/sbi-affiliate" class="cta-pulse-yellow flex-1 bg-navy hover:bg-gray-800 text-white text-center font-bold text-lg rounded-2xl py-5 px-6 transition-all shadow-lg hover:shadow-xl">②口座を開設する →</a>
+      </div>
+      <p class="text-xs text-gray-400 mb-2">※ 本ページはアフィリエイト広告を含みます。各手続きは公式サイトで行われます。</p>
+      <p class="text-xs text-gray-400">※ 投資にはリスクがあります。余裕資金で始めることをおすすめします。</p>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="bg-navy text-gray-400 py-10 px-4">
+    <div class="max-w-2xl mx-auto text-center text-xs leading-relaxed">
+      <p class="mb-3">当サイトは投資の勧誘を目的としたものではありません。投資判断はご自身の責任で行ってください。</p>
+      <p class="mb-3">金融商品取引法に基づく表示：リスクについては各証券会社の重要事項説明書をご確認ください。</p>
+      <p class="mb-6">三井住友カードおよびSBI証券の最新情報は各公式サイトをご確認ください。</p>
+      <p class="text-gray-500">&copy; 2026 マネーのはじめかた All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    function toggleFaq(btn) {
+      const answer = btn.nextElementSibling;
+      const icon = btn.querySelector('span:last-child');
+      const isOpen = answer.classList.contains('open');
+      document.querySelectorAll('.faq-answer').forEach(a => { a.classList.remove('open'); a.parentElement.querySelector('button span:last-child').textContent = '＋'; });
+      if (!isOpen) { answer.classList.add('open'); icon.textContent = '−'; }
+    }
+  </script>
+</body>
+</html>
